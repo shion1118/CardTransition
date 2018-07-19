@@ -9,6 +9,7 @@
     tools:context=".MainActivity">
 
     <android.support.design.card.MaterialCardView
+        android:id="@+id/user_cardView"
         android:layout_width="match_parent"
         android:layout_height="266dp"
         app:cardCornerRadius="4dp">
