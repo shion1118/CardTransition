@@ -2,4 +2,5 @@
     <string name="app_name">CardTransition</string>
     <string name="user_name">Shion Fukushima</string>
     <string name="user_profession">Work contact</string>
+    <string name="user_phone">000-1234-5678</string>
 </resources>
