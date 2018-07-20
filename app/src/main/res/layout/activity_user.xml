@@ -6,7 +6,6 @@
     android:layout_height="match_parent"
     android:background="@android:color/white"
     android:orientation="vertical"
-    android:transitionName="user"
     android:focusable="true"
     android:focusableInTouchMode="true"
     tools:context=".UserActivity">
@@ -16,13 +15,14 @@
         android:layout_width="match_parent"
         android:layout_height="194dp"
         android:scaleType="centerCrop"
+        android:transitionName="userHeader"
         app:srcCompat="@drawable/header" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:layout_margin="16dp"
-        android:orientation="horizontal">
+        android:orientation="horizontal" >
 
         <ImageView
             android:id="@+id/user_icon_imageView"
@@ -30,10 +30,11 @@
             android:layout_height="40dp"
             android:layout_marginRight="16dp"
             android:layout_weight="1"
+            android:transitionName="userIcon"
             app:srcCompat="@drawable/icon" />
 
         <LinearLayout
-            android:layout_width="240dp"
+            android:layout_width="272dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:orientation="vertical">
@@ -46,7 +47,8 @@
                 android:text="@string/user_name"
                 android:textColor="@color/colorHeaderText"
                 android:textSize="20dp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:transitionName="userName"/>
 
             <TextView
                 android:id="@+id/user_profession_textView"
@@ -55,7 +57,8 @@
                 android:layout_weight="1"
                 android:text="@string/user_profession"
                 android:textColor="@color/colorSubheadText"
-                android:textSize="14dp" />
+                android:textSize="14dp"
+                android:transitionName="userProfession"/>
         </LinearLayout>
 
     </LinearLayout>
